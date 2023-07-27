@@ -66,47 +66,58 @@
             .iframe-style {
         width: 1200px;
         height: 800px;
-        
-      
-    }
+           
+        }
+            .menu-button.clicked {
+                background-color: orange;
+             }
         </style>
         <script>
             function showNotebook(url) {
                 var iframe = document.querySelector('.iframe-style');
                 iframe.src = url;
+                        // Réinitialiser la couleur de fond de tous les items du menu
+                var menuButtons = document.querySelectorAll('.menu-button');
+                menuButtons.forEach(function (button) {
+                    button.classList.remove('clicked');
+                });
+                // Changer la couleur de fond de l'item du menu cliqué
+                var clickedButtonId = event.target.id;
+                var clickedButton = document.getElementById(clickedButtonId);
+                clickedButton.classList.add('clicked');
             }
         </script>
     </head>
 <body>
   
-<div class="menu">
-    <!-- Contenu HTML du menu ici -->
-    <h2>NoteBooks</h2>
-    <ul class="menu-list">
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('1-Botanic_Article.html')">Article</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('1-Botanic_Client.html')">Client</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('1-Botanic_Magasin.html')">Magasin</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('1-Botanic_entete.html')">entete ticket</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('1-Botanic_ticket.html')">détail ticket</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('2-Botanic_Phase1_Analyses_univariee_bivariee.html')">Analyses univariee et bivariee</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="menu-button" onclick="showNotebook('3-Botanic_Phase2et3_modelisation.html')">Modelisation</a>
-        </li>
-        <!-- Ajoutez les autres items ici pour les autres notebooks -->
-    </ul>
-</div>
+    <div class="menu">
+        <!-- Contenu HTML du menu ici -->
+        <h2>NoteBooks</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#" id="notebook1" class="menu-button" onclick="showNotebook('1-Botanic_Article.html')">Article</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="notebook2" class="menu-button" onclick="showNotebook('1-Botanic_Client.html')">Client</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="notebook3" class="menu-button" onclick="showNotebook('1-Botanic_Magasin.html')">Magasin</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="notebook4" class="menu-button" onclick="showNotebook('1-Botanic_entete.html')">entete ticket</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="notebook5" class="menu-button" onclick="showNotebook('1-Botanic_ticket.html')">détail ticket</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="notebook6" class="menu-button" onclick="showNotebook('2-Botanic_Phase1_Analyses_univariee_bivariee.html')">Analyses univariee et bivariee</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" id="notebook7" class="menu-button" onclick="showNotebook('3-Botanic_Phase2et3_modelisation.html')">Modelisation</a>
+            </li>
+            <!-- Ajoutez les autres items ici pour les autres notebooks -->
+        </ul>
+    </div>
 
 <div class="content">
     <!-- Ici, nous ajoutons l'iframe pour afficher les pages HTML générées -->

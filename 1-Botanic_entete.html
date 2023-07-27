@@ -13089,15 +13089,83 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/MachineLearnia/Python-Machine-Learning/blob/master/27%20-%20Exploratory%20Data%20Analysis.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="**1--Analyser-la-demande-du-commanditaire-:**"><font color="Bleu">**1- Analyser la demande du commanditaire :**</font><a class="anchor-link" href="#**1--Analyser-la-demande-du-commanditaire-:**">&#182;</a></h1><p>contexte, objectif, analyse du marché, … (recherche à faire en dehors du cours)</p>
+<h1 id="**DATA-MINING---Projet-Botanic**"><font color="Bleu">**DATA MINING - Projet Botanic**</font><a class="anchor-link" href="#**DATA-MINING---Projet-Botanic**">&#182;</a></h1><ul>
+<li><strong>Etudiants</strong> : Faiçal SBAI &amp; Alain BONDZA </li>
+<li><p><strong>Année de réalisation</strong> : 2023</p>
+</li>
+<li><p><font color="Bleu">**Sujet**</font> :</p>
+</li>
+<li><strong>Attrition des clients</strong> : Identifier les clients qui sont attritionnistes en 2017 versus ceux qui sont non attritionnistes</li>
+<li></li>
+<li><p><font color="Bleu">**Histoire et Contexte**</font> :</p>
+</li>
+<li><p>Botanic® est une chaîne de magasins fondée en France en 1995. L'enseigne propose une sélection de plantes, d'outils de jardinage, de produits bio pour le jardin et la maison, ainsi que des conseils de jardinage écologique. Elle se positionne sur la thématique du respect de l'environnement et la promotion du développement durable.</p>
+</li>
+<li><p>Au travers d’un réseau de 70 magasins en France, Botanic® est le troisième groupe sur le marché de la jardinerie en France après InVivo et Truffaut.</p>
+</li>
+<li><p>Comme toute entreprise, Botanic peut être confrontée à un défis de fidélisation de sa clientèle. L'attrition de ses clients peut être due à plusieurs facteurs, tels que :</p>
+<ul>
+<li>Une Concurrence accrue à travers l'émergence de nouvelles enseignes, ou de la présence d'autres concurrents dans le secteur du jardinage et des produits bio. </li>
+<li>Une évolution des préférences de ses consommateurs avec le temps, ce qui doit conduire Botanic® à s'adapter pour répondre aux nouvelles demandes du marché. Si les clients trouvent des alternatives plus attractives, ou si les produits de Botanic® ne correspondent plus à leurs besoins, cela peut entraîner une attrition des clients.</li>
+<li>Un service à la clientèle médiocre, qui occasionne des problèmes récurrents, et peut entraîner une baisse de la fidélité des clients. </li>
+<li>Les changements économiques dû aux fluctuations économiques, telles que les récessions ou les périodes de ralentissement économique, peuvent affecter les dépenses des consommateurs et entraîner une réduction de sa clientèle.</li>
+</ul>
+</li>
+<li></li>
+<li><p><font color="Bleu">**Botanic® en bref (2016-2017)**</font> :</p>
+</li>
+<li><p><strong>ACTIVITÉ</strong> : jardinerie, animalerie, décoration, marché bio, bien-être.</p>
+</li>
+<li><strong>CRÉATION</strong> : 1977 (Les Serres du Salève) et 1995 (marque Botanic)</li>
+<li><strong>IMPLANTATION</strong> : Archamps (siège social)</li>
+<li><strong>CHIFFRE D’AFFAIRES</strong> : 364M€ (2016-2017)</li>
+<li><strong>EFFECTIFS</strong> : 2200 salariés</li>
+<li><strong>MAGASINS (France)</strong> : 70 </li>
+<li><strong>RÉPARTITION DU CAPITAL</strong> : les familles « opérationnelles » Blanchet et Bouchet viennent d’augmenter leur participation, les familles Verdonnet ayant vendu une grande partie de leurs parts. Les montants ne sont pas communiqués.</li>
+<li></li>
+<li><font color="Bleu">**Demande de l'enseigne Botanic®**</font> : 
+L’ambition de l'enseigne Botanic® est de devenir la jardinerie naturelle préférée des français en conciliant jardin et nature, croissance et responsabilité sociétale de l’entreprise. Pour cette raison, l'enseigne Botanic® souhaite : <ul>
+<li>Identifier les clients attritionnistes en 2017.</li>
+<li>Disposer d'un modèle prédictif de l'attrition. </li>
+<li>Obtenir des recommandations marketing de rétention des clients encore actifs mais à risque d'attrition en 2017. </li>
+</ul>
+</li>
+<li></li>
+<li><p><font color="Bleu">**Objectif**</font> :</p>
+<ul>
+<li><p>Expliquer (et mesurer) l'influence de facteurs sur un départ des clients à la concurrence (l'attrition des clients)</p>
+<ul>
+<li>Prédire le risque de départ à la concurrence d'un client.</li>
+</ul>
+</li>
+<li><p>Prédire l'événement : Prendre des décisions pour agir sur certains facteurs :</p>
+<ul>
+<li>retenir les clients, </li>
+<li>optimiser les offres commerciales, </li>
+<li>mieux cibler une campagne marketing, </li>
+<li>diminuer le risque de départ à la concurrence, </li>
+<li>personnaliser les actions commerciales, etc.  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+<li><font color="Bleu">**Source des données**</font> : <ul>
+<li>Bases de données de l’enseigne Botanic des années 2016 et 2017.</li>
+</ul>
+</li>
+<li></li>
+<li><font color="Bleu">**Périmètre de l’étude**</font> :<ul>
+<li>Le périmètre de l’étude est limitée à plusieurs régions en France pour les clients non-VIP uniquement.  </li>
+<li>Focus sur les clients ayant fait au moins 2 achats</li>
+</ul>
+</li>
+<li></li>
+<li><font color="Bleu">**Modélisation**</font> : Supervisée.  <font color="Bleu">**Modèle**</font> : Régression Logistique<ul>
+<li>La régression logistique est le modèle qui sera utilisé dans le cadre de ce projet.</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13113,7 +13181,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="**2--Initialisation-de-l'environnement-:**"><font color="Bleu">**2- Initialisation de l'environnement :**</font><a class="anchor-link" href="#**2--Initialisation-de-l'environnement-:**">&#182;</a></h1>
+<h1 id="**1--Initialisation-de-l'environnement**"><font color="Bleu">**1- Initialisation de l'environnement**</font><a class="anchor-link" href="#**1--Initialisation-de-l'environnement**">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13142,9 +13210,9 @@ div#notebook {
 
 
 
-<div id="ab9667ed-e7be-42be-b590-9adf2d72f8e7" class="output_subarea output_javascript ">
+<div id="5623eed0-d7da-414f-93a7-5cbc1ced93d8" class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#ab9667ed-e7be-42be-b590-9adf2d72f8e7');
+var element = $('#5623eed0-d7da-414f-93a7-5cbc1ced93d8');
 IPython.OutputArea.auto_scroll_threshold = 9999
 
 </script>
@@ -13182,7 +13250,7 @@ IPython.OutputArea.auto_scroll_threshold = 9999
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="**3--Lecture-des-fichiers-en-entr%C3%A9e-:**"><font color="Bleu">**3- Lecture des fichiers en entr&#233;e :**</font><a class="anchor-link" href="#**3--Lecture-des-fichiers-en-entr%C3%A9e-:**">&#182;</a></h1>
+<h1 id="**2--Lecture-des-fichiers-en-entr%C3%A9e**"><font color="Bleu">**2- Lecture des fichiers en entr&#233;e**</font><a class="anchor-link" href="#**2--Lecture-des-fichiers-en-entr%C3%A9e**">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13313,7 +13381,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="**4--V%C3%A9rification-de-la-structure-des-tables--:**"><font color="Bleu">**4- V&#233;rification de la structure des tables  :**</font><a class="anchor-link" href="#**4--V%C3%A9rification-de-la-structure-des-tables--:**">&#182;</a></h1><p>(colonnes, lignes) – statistiques descriptives et 1ères observations</p>
+<h1 id="**3--V%C3%A9rification-de-la-structure-des-tables**"><font color="Bleu">**3- V&#233;rification de la structure des tables**</font><a class="anchor-link" href="#**3--V%C3%A9rification-de-la-structure-des-tables**">&#182;</a></h1><p>(colonnes, lignes) – statistiques descriptives et 1ères observations</p>
 
 </div>
 </div>
